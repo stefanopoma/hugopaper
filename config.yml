@@ -1,5 +1,5 @@
 baseURL: "https://stefanopoma.com/"
-title: ExampleSite
+title: "Stefano Poma"
 paginate: 5
 
 enableRobotsTXT: true
@@ -12,10 +12,10 @@ minify:
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Welcome to my personal website
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
+  env: production
+  title: "Stefano Poma"
+  description: "Personal website and blog of Stefano Poma - Product Marketing Professional and Technology Enthusiast"
+  keywords: [Product Marketing, Technology, Digital Marketing, Blog, Portfolio]
   author: Stefano
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -55,31 +55,32 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    enabled: true
+    title: "Stefano Poma"
+    subtitle: "Product Marketing Professional | Technology Enthusiast"
+    imageUrl: "/images/profile.jpg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: "Stefano Poma"
     buttons:
-      - name: Posts
+      - name: Blog
         url: posts
-      - name: Tags
-        url: tags
+      - name: Projects
+        url: projects
+      - name: About
+        url: about
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Welcome to my corner of the web 👋"
+    Content: "I'm Stefano, a product marketing professional passionate about technology and innovation. Here I share my thoughts, projects, and experiences in tech and digital marketing."
 
   socialIcons:
-    - name: x
-      url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/stefanopoma"
+    - name: linkedin
+      url: "https://linkedin.com/in/stefanopoma"
+    # Add or remove social icons as needed
 
   analytics:
     google:
@@ -112,18 +113,22 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: blog
+      name: Blog
+      url: /posts/
       weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - identifier: projects
+      name: Projects
+      url: /projects/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
+    - identifier: about
+      name: About
+      url: /about/
       weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
