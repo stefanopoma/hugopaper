@@ -58,10 +58,11 @@ params:
     enabled: true
     title: "Stefano Poma"
     subtitle: "Product Marketing Professional | Technology Enthusiast"
-    imageUrl: "/images/profile.jpg"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: "Stefano Poma"
+    # Add your profile picture in /images/profile.jpg or update the imageUrl with your preferred image
+    #imageUrl: "/images/profile.jpg"
+    #imageWidth: 120
+    #imageHeight: 120
+    #imageTitle: "Stefano Poma"
     buttons:
       - name: Blog
         url: posts
@@ -80,6 +81,8 @@ params:
       url: "https://github.com/stefanopoma"
     - name: linkedin
       url: "https://linkedin.com/in/stefanopoma"
+    - name: mastodon
+      url: "https://mastodon.social/@stefanopoma"
     # Add or remove social icons as needed
 
   analytics:
